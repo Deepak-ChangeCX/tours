@@ -24,7 +24,7 @@ const Login = () =>{
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("email", response.data.data.user.email);
         // Redirect to the homepage after successful login
-        router.push("/");
+        router.push("/homepage");
       } catch (err: any) {
         // Handle login error
         // console.error("Login failed:", err.response.data.message);

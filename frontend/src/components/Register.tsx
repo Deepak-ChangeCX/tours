@@ -33,7 +33,7 @@ const Register = () =>{
 
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("email", response.data.data.newUser.email);
-      router.push("/");
+      router.push("/homepage");
     } catch (err: any) {
         Swal.fire({
             icon: "error",
